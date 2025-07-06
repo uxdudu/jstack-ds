@@ -1,0 +1,48 @@
+.alertDialog {
+  background: #191c1f;
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.alertDialog__container {
+  position: relative;
+  border: 1px solid #131517;
+  border-radius: 16.5px;
+  box-shadow: 0px 1px 2px 0px rgba(7, 9, 10, 0.1);
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.alertDialog__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.alertDialog__title {
+  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ebeeef;
+}
+
+.alertDialog__description {
+  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #718089;
+}
+
+.alertDialog__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+  width: 100%;
+} 

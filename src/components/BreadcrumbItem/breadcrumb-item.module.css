@@ -1,0 +1,17 @@
+.breadcrumbItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Instrument Sans', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  user-select: none;
+  color: #718089;
+  transition: color 0.2s;
+}
+
+.breadcrumbItem:hover {
+  color: #ebeeef;
+} 

@@ -1,0 +1,117 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body, 'Instrument Sans', Arial, sans-serif);
+  font-weight: var(--font-medium, 600);
+  font-size: var(--text-lg, 16px);
+  line-height: var(--leading-7, 24px);
+  border-radius: var(--radius-button);
+  border: none;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 12px 24px;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.button--primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+.button--primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+.button--secondary {
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+}
+.button--secondary:hover:not(:disabled) {
+  background: var(--secondary-hover);
+}
+.button--destructive {
+  background: var(--destructive);
+  color: var(--destructive-foreground);
+}
+.button--destructive:hover:not(:disabled) {
+  background: var(--destructive-hover);
+}
+.button--outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.button--ghost {
+  background: transparent;
+  color: var(--primary);
+  border: none;
+}
+.button--link {
+  background: none;
+  color: var(--primary);
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+}
+.button--icon {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 8px;
+  border-radius: 50%;
+  min-width: 40px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.button--primaryAlt {
+  background: var(--primary-hover);
+  color: var(--primary-foreground);
+}
+.button--outlineAlpha {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary-hover);
+  opacity: 0.7;
+}
+.button--lg {
+  font-size: 1.125rem;
+  padding: 16px 32px;
+}
+.button__icon {
+  display: inline-flex;
+  margin-right: 0;
+}
+.button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.button__spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: button-spinner 0.6s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes button-spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+} 
