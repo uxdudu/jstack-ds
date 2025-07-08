@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  width: 100%;
+}
+.wrapper--small {
+  width: 24rem;
+}
+.wrapper--labelLeft {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.wrapper--disabled {
+  opacity: 0.5;
+}
+.label {
+  font-family: var(--font-body, 'Instrument Sans', Arial, sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--default-foreground, #ebeeef);
+  line-height: 20px;
+}
+.label--error {
+  color: var(--destructive-alt-foreground, #fca5a5);
+}
+.label--left {
+  max-width: 100px;
+  min-width: 100px;
+  text-align: left;
+}
+.fieldWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+.input {
+  background: var(--input-background, #131517);
+  border: 1px solid var(--input-input, #32393d);
+  border-radius: 10px;
+  color: var(--default-foreground, #ebeeef);
+  font-family: var(--font-body, 'Instrument Sans', Arial, sans-serif);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 12px;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.input--small {
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.input--disabled {
+  background: var(--input-background, #131517);
+  color: var(--muted-foreground, #718089);
+  cursor: not-allowed;
+}
+.input--error {
+  border-color: var(--destructive-alt-foreground, #fca5a5);
+  box-shadow: 0 0 0 2px #f43f5e, 0 0 0 1px #07090a;
+}
+.input--focused {
+  border-color: var(--border-primary, #40cbf6);
+  box-shadow: 0 0 0 2px #40cbf6, 0 0 0 1px #07090a;
+}
+.input--completed {
+  color: var(--default-foreground, #ebeeef);
+}
+.input--labelLeft {
+  border-radius: 8px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.helperText {
+  color: var(--muted-foreground, #718089);
+  font-size: 12px;
+  line-height: 16px;
+}
+.errorText {
+  color: var(--destructive-alt-foreground, #fca5a5);
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+} 
