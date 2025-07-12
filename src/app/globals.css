@@ -1,42 +1,79 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+@import "../styles/tokens.css";
+@import "tailwindcss";
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h2 {
+  font-family: var(--h2-font-family);
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+}
+h3 {
+  font-weight: var(--h3-font-weight);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+h4 {
+  font-weight: var(--h4-font-weight);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+}
+p {
+  font-family: var(--p-font-family);
+  font-weight: var(--p-font-weight);
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+}
+.lead {
+  font-family: var(--lead-font-family);
+  font-weight: var(--lead-font-weight);
+  font-size: var(--lead-font-size);
+  line-height: var(--lead-line-height);
+}
+.large {
+  font-family: var(--large-font-family);
+  font-weight: var(--large-font-weight);
+  font-size: var(--large-font-size);
+  line-height: var(--large-line-height);
+}
+.small {
+  font-family: var(--small-font-family);
+  font-weight: var(--small-font-weight);
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
+}
+code, .inline-code {
+  font-family: var(--inline-code-font-family);
+  font-weight: var(--inline-code-font-weight);
+  font-size: var(--inline-code-font-size);
+  line-height: var(--inline-code-line-height);
+}
+blockquote {
+  font-family: var(--blockquote-font-family);
+  font-style: var(--blockquote-font-style);
+  font-weight: var(--blockquote-font-weight);
+  font-size: var(--blockquote-font-size);
+  line-height: var(--blockquote-line-height);
+}
+table {
+  font-family: var(--table-font-family);
+  font-weight: var(--table-font-weight);
+  font-size: var(--table-font-size);
+  line-height: var(--table-line-height);
+}
+ul, ol {
+  font-family: var(--list-font-family);
+  font-weight: var(--list-font-weight);
+  font-size: var(--list-font-size);
+  line-height: var(--list-line-height);
 }
